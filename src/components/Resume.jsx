@@ -11,7 +11,7 @@ function Resume({ personalDetails, educationList, experienceList }) {
             <div className="education-list">
                 {educationList.map((education) => {
                     return (
-                        <div className="education-list-item">
+                        <div className="education-list-item" key={education.id}>
                             <div className="education-info">
                                 <p>
                                     {education.startDate} - {education.endDate}
@@ -30,7 +30,7 @@ function Resume({ personalDetails, educationList, experienceList }) {
             <div className="experience list">
                 {experienceList.map((experience) => {
                     return (
-                        <div className="experience-list-item">
+                        <div className="experience-list-item" key={experience.id}>
                             <div className="experience-info">
                                 <p>
                                     {experience.startDate} -{" "}

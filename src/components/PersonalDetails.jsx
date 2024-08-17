@@ -1,4 +1,12 @@
-function PersonalDetails({ personalDetails, onChange }) {
+function PersonalDetails({ personalDetails, onChange, activeInput, changeActiveInput }) {
+    if (activeInput !== "personal-details") {
+        return (
+            <button className="personal-details" onClick={changeActiveInput}>
+                <h1>Personal Details</h1>
+            </button>
+        );
+    }
+
     return (
         <div className="personal-details">
             <h1>Personal Details</h1>

@@ -2,6 +2,7 @@ import InputFields from "./components/InputFields";
 import Resume from "./components/Resume";
 import "./styles/reset.css";
 import "./styles/app.css";
+import "./styles/resume.css";
 import { useState } from "react";
 import {
     defaultEducationList,

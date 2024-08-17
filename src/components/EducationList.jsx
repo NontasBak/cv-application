@@ -1,11 +1,55 @@
 import { useState } from "react";
 import Education from "./Education";
 
-function EducationList({ educationList, onChange }) {
+function EducationList({
+    educationList,
+    onChange,
+    activeInput,
+    changeActiveInput,
+    activeEducation,
+    setActiveEducation,
+}) {
+    if (activeInput !== "education-list") {
+        return (
+            <button className="education-list" onClick={changeActiveInput}>
+                <h1>Education</h1>
+            </button>
+        );
+    }
+
+    if (activeEducation === null) {
+        return (
+            <div className="education-list active">
+                <h1>Education</h1>
+                {educationList.map((education) => {
+                    return (
+                        <button
+                            key={education.id}
+                            className="education"
+                            onClick={() => setActiveEducation(education.id)}
+                        >
+                            <h2>{education.school}</h2>
+                            <h3>{education.degree}</h3>
+                        </button>
+                    );
+                })}
+            </div>
+        );
+    }
+
     return (
-        <div className="education-list">
+        <div className="education-list active">
+            <h1>Education</h1>
             {educationList.map((education) => {
-                return <Education key={education.id} education={education} onChange={onChange}/>;
+                return (
+                    education.id === activeEducation && (
+                        <Education
+                            key={education.id}
+                            education={education}
+                            onChange={onChange}
+                        />
+                    )
+                );
             })}
         </div>
     );

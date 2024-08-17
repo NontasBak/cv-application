@@ -1,0 +1,17 @@
+.resume {
+    flex: 1.5 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume .fullName {
+    align-self: center;
+    font-size: 3rem;
+}
+
+.resume .personal-details {
+    display: flex;
+    justify-content: space-around;
+}
