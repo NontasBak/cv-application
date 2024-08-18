@@ -1,5 +1,6 @@
 import Experience from "./Experience";
 import { useState } from "react";
+import arrowDown from "../assets/arrow-down.svg";
 
 function ExperienceList({
     experienceList,
@@ -13,6 +14,7 @@ function ExperienceList({
         return (
             <button className="experience-list" onClick={changeActiveInput}>
                 <h1>Experience</h1>
+                <img src={arrowDown} alt="expand" className="arrow-down"/>
             </button>
         );
     }

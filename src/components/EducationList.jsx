@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Education from "./Education";
+import arrowDown from "../assets/arrow-down.svg";
 
 function EducationList({
     educationList,
@@ -13,6 +14,7 @@ function EducationList({
         return (
             <button className="education-list" onClick={changeActiveInput}>
                 <h1>Education</h1>
+                <img src={arrowDown} alt="expand" className="arrow-down"/>
             </button>
         );
     }
