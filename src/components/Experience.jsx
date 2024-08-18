@@ -48,11 +48,12 @@ function Experience({ experience, onChange }) {
             </label>
             <label>
                 Description
-                <input
+                <textarea
                     type="text"
                     name="description"
                     value={experience.description}
                     onChange={onChange}
+                    rows={4}
                 />
             </label>
         </form>

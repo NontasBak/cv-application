@@ -53,7 +53,9 @@ function App() {
             <InputFields
                 personalDetails={personalDetails}
                 educationList={educationList}
+                setEducationList={setEducationList}
                 experienceList={experienceList}
+                setExperienceList={setExperienceList}
                 onChange={handleChange}
             />
             <Resume

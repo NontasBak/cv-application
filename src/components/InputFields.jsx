@@ -6,7 +6,9 @@ import { useState } from "react";
 function InputFields({
     personalDetails,
     educationList,
+    setEducationList,
     experienceList,
+    setExperienceList,
     onChange,
 }) {
     const [activeInput, setActiveInput] = useState("personal-details");
@@ -29,6 +31,7 @@ function InputFields({
             />
             <EducationList
                 educationList={educationList}
+                setEducationList={setEducationList}
                 onChange={onChange}
                 activeInput={activeInput}
                 changeActiveInput={changeActiveInput}
@@ -37,6 +40,7 @@ function InputFields({
             />
             <ExperienceList
                 experienceList={experienceList}
+                setExperienceList={setExperienceList}
                 onChange={onChange}
                 activeInput={activeInput}
                 changeActiveInput={changeActiveInput}
