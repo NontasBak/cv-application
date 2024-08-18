@@ -88,7 +88,7 @@
     line-height: 1.2lh;
 }
 
-@media (max-width: 835px) {
+@media screen and (max-width: 835px) {
     :root {
         font-size: 10px;
     }
@@ -98,4 +98,20 @@
         height: 14.85cm;
         width: 100%;
     }
+}
+
+@media print {
+    .input-container {
+        display: none;
+    }
+
+    .resume {
+        height: 27.7cm;
+        box-shadow: none;
+        margin-top: -25px;
+    }
+}
+
+@page {
+    margin: 0;
 }

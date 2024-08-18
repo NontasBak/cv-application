@@ -54,7 +54,8 @@
     animation: dropDown 0.3s;
 }
 
-.showing-education, .showing-experience {
+.showing-education,
+.showing-experience {
     transform-origin: top center;
     animation: fadeIn 0.5s;
 }
@@ -196,6 +197,17 @@ form label input {
 .input-container .delete:hover {
     filter: brightness(1.2);
     cursor: pointer;
+}
+
+.print {
+    justify-content: center !important;
+    background-color: rgb(192, 69, 192);
+    color: white;
+    align-self: flex-end;
+}
+
+.print:hover {
+    background-color: rgb(219, 82, 219) !important;
 }
 
 @media (max-width: 1186px) {

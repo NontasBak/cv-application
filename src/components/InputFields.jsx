@@ -47,6 +47,7 @@ function InputFields({
                 activeExperience={activeExperience}
                 setActiveExperience={setActiveExperience}
             />
+            <button className="print" onClick={window.print}>Print CV</button>
         </div>
     );
 }
