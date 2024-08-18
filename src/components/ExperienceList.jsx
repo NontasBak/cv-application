@@ -68,7 +68,7 @@ function ExperienceList({
     }
 
     return (
-        <div className="experience-list active">
+        <div className="experience-list active showing-experience">
             <div className="experience-title-container">
                 <button
                     className="arrow-left"

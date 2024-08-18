@@ -67,7 +67,7 @@ function EducationList({
     }
 
     return (
-        <div className="education-list active">
+        <div className="education-list active showing-education">
             <div className="education-title-container">
                 <button
                     className="arrow-left"
