@@ -15,8 +15,8 @@ function ExperienceList({
 }) {
     function addExperienceHandler() {
         const newExperience = {
-            school: "",
-            degree: "",
+            companyName: "",
+            position: "",
             startDate: "",
             endDate: "",
             location: "",

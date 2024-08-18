@@ -15,8 +15,8 @@ function EducationList({
 }) {
     function addEducationHandler() {
         const newEducation = {
-            companyName: "",
-            position: "",
+            school: "",
+            degree: "",
             startDate: "",
             endDate: "",
             location: "",
